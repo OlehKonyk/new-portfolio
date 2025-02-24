@@ -29,3 +29,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.getElementById("nav-menu").classList.remove("show");
     });
 });
+
+window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    if (window.scrollY > 50) {
+        header.style.background = "rgba(15, 10, 38, 0.8)";
+    } else {
+        header.style.background = "rgba(15, 10, 38, 0.4)";
+    }
+});

@@ -1,7 +1,7 @@
 :root {
     --color-bg: rgb(24, 10, 38);
     --color-text: rgb(255, 225, 244);
-    --color-bg-cart: rgb(40, 13, 62);
+    --color-bg-cart: rgb(55, 36, 71);
 }
 
 * {
@@ -150,9 +150,11 @@ a {
     justify-content: start;
 }
 
-.avatar {
+.home-page-content img {
     background: transparent;
     background-color: transparent;
+    height: 240px;
+    width: 240px;
 }
 
 .home-page-text {
@@ -226,4 +228,34 @@ a {
     font-size: 32px;
     text-align: center;
     margin-bottom: 28px;
+}
+
+#info img {
+    width: 180px;
+    height: 180px;
+}
+
+.info-container {
+    display: flex;
+    margin: 24px;
+}
+
+.info-container h4 {
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+}
+
+.info-container p {
+    font-size: 14px;
+}
+
+.info-container button {
+    display: block;
+    padding: 4px 12px;
+    margin: 12px auto;
+    background: var(--color-text);
+    color: var(--color-bg);
+    border-radius: 5px;
+    
 }

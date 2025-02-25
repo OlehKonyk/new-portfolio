@@ -39,6 +39,7 @@ a {
     width: 100%;
     border-bottom: 2px solid rgb(67, 56, 75);
     margin: 0 4px;
+    z-index: 100;
 }
 
 .navigator {
@@ -94,7 +95,6 @@ a {
     width: 140px;
     padding: 10px 0;
     text-align: left;
-    z-index: 100;
     box-shadow: -2px 2px 8px var(--color-text);
 }
 

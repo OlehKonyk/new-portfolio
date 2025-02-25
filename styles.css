@@ -30,6 +30,12 @@ a {
     border: none;
 }
 
+h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
 /* Header */
 
 .header {
@@ -37,7 +43,7 @@ a {
     top: 0;
     height: 60px;
     width: 100%;
-    border-bottom: 2px solid rgb(67, 56, 75);
+    border-bottom: 2px solid rgb(114, 98, 165);
     margin: 0 4px;
     z-index: 100;
 }
@@ -179,43 +185,41 @@ a {
     padding-top: 24px;
 }
 
-#works h2 {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 28px;
-}
-
 .cart-container {
     display: grid;
     columns: 1;
-    gap: 30px;
+    gap: 24px;
     margin: 0 32px;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 460px));
+    justify-content: space-around;
 }
 
 .project-cart {
     background: var(--color-bg-cart);
-    padding: 12px 20px;
+    padding: 8px 16px;
     border: 1px solid black;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
     opacity: .6;
-    max-width: 600px;
+    height: auto;
+    aspect-ratio: 21 / 9 ;
 }
 
 .project-cart h3 {
     margin: 8px 0;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .project-cart p {
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .project-cart img {
-    width: 280px;
-    height: 180px;
-    margin: 8px;
+    max-width: 100%; 
+    height: auto;
+    object-fit: contain;
     object-fit: cover;
     clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
+    margin: 8px 0;
 }
 
 /* info */
@@ -225,15 +229,9 @@ a {
     padding-top: 32px;
 }
 
-#info h2 {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 28px;
-}
-
 .info-container img {
-    min-width: 160px;
-    min-height: 160px;
+    min-width: 180px;
+    min-height: 180px;
     max-width: 360px;
     max-height: 360px;
     object-fit: contain;
@@ -242,6 +240,7 @@ a {
 .info-container {
     display: flex;
     margin: 24px;
+    min-height: 40vh;
 }
 
 .info-container h4 {
@@ -253,8 +252,9 @@ a {
 .info-container p {
     font-size: 14px;
 }
+
 .info-content {
-    max-width: 60%;
+    max-width: 50%;
     padding: 20px;
 }
 
@@ -280,7 +280,7 @@ a {
 .skills-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 80px));
+    grid-template-columns: repeat(auto-fit, minmax(40px, 50px));
     justify-content: space-around;
     gap: 14px;
 }
@@ -299,3 +299,49 @@ a {
     object-fit: contain;
 }
 
+/* form */
+
+#form-section {
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    padding-top: 32px;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* footer */
+
+.footer {
+    background: var(--color-bg-cart);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 12px;
+    border-top: 2px solid rgb(114, 98, 165);
+}
+
+.footer p {
+    font-size: 8px;
+}
+
+.contacts {
+    width: 15%;
+    margin: 0 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts img {
+    height: 18px;
+    width: 18px;
+}

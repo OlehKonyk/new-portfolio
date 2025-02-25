@@ -55,6 +55,7 @@ a {
 }
 
 .right-side {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,11 +89,13 @@ a {
     position: absolute;
     top: 60px;
     right: 0;
-    background: rgb(48, 11, 73);
+    background: rgb(34, 4, 54);
     opacity: .8;
     width: 140px;
     padding: 10px 0;
     text-align: left;
+    z-index: 100;
+    box-shadow: -2px 2px 8px var(--color-text);
 }
 
 .nav-menu.show {
@@ -110,6 +113,7 @@ a {
     color: var(--color-text);
     display: block;
     font-size: 14px;
+    
 }
 
 .nav-menu li a:hover {
@@ -191,11 +195,13 @@ a {
     padding: 12px 20px;
     border: 1px solid black;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+    opacity: .6;
+    max-width: 600px;
 }
 
 .project-cart h3 {
     margin: 8px 0;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .project-cart p {
@@ -203,7 +209,21 @@ a {
 }
 
 .project-cart img {
-    width: 240px;
+    width: 280px;
     height: 180px;
-    margin: 12px 18px;
+    margin: 8px;
+    object-fit: cover;
+    clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
+}
+
+/* info */
+
+#info {
+    min-height: 100vh;
+}
+
+#info h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 28px;
 }

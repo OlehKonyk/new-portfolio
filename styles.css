@@ -56,9 +56,9 @@ h2 {
 }
 
 .navigator a {
-    font-size: 14px;
+    font-size: 12px;
     position: relative;
-    bottom: 18px;
+    margin-left: 8px;
 }
 
 .right-side {
@@ -232,6 +232,7 @@ h2 {
 }
 
 .info-container img {
+    margin-bottom: 70px;
     min-width: 180px;
     min-height: 180px;
     max-width: 360px;
@@ -243,16 +244,17 @@ h2 {
     display: flex;
     margin: 24px;
     min-height: 40vh;
+    justify-content: space-between;
 }
 
 .info-container h4 {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     padding: 8px;
 }
 
 .info-container p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .info-content {
@@ -276,7 +278,7 @@ h2 {
 }
 
 .skills-container h3 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 12px;
 }
 

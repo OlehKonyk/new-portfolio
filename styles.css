@@ -1,6 +1,6 @@
 :root {
     --color-bg: rgb(24, 10, 38);
-    --color-text: rgb(255, 225, 244);
+    --color-text: rgb(233, 239, 246);
     --color-bg-cart: rgb(55, 36, 71);
 }
 
@@ -197,7 +197,9 @@ h2 {
 .project-cart {
     background: var(--color-bg-cart);
     padding: 8px 16px;
-    border: 1px solid black;
+    border-width: 2px 2px 4px 4px;
+    border-style: solid;
+    border-color: black;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
     opacity: .6;
     height: auto;
@@ -275,6 +277,7 @@ h2 {
 
 .skills-container h3 {
     font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .skills-list {
@@ -288,9 +291,15 @@ h2 {
 .skill-icon {
     justify-content: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     height: auto;
     aspect-ratio: 1 / 1;
+}
+
+.skill-icon img:hover {
+    margin-bottom: 4px;
+    filter: drop-shadow(0 4px 10px  var(--color-text));
+    transform: scale(1.2);
 }
 
 .skill-icon img {
@@ -298,6 +307,7 @@ h2 {
     height: auto;
     object-fit: contain;
 }
+
 
 /* form */
 
@@ -313,8 +323,77 @@ h2 {
     display: flex;
     flex-direction: column;
     height: 60vh;
+    width: 70%;
     align-items: center;
     justify-content: space-around;
+    background: var(--color-bg-cart);
+    border-radius: 20px;
+    opacity: .6;
+    border-width: 1px 1px 4px 4px;
+    border-style: solid;
+    border-color: black;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 12px;
+    gap: 12px;
+}
+
+.form-input {
+    width: 100%;
+    min-height: 24px;
+    height: 30%;
+    border-radius: 8px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: 16px;
+    border-width: 4px 4px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 4px 8px;
+}
+
+.form textarea {
+    height: 40%;
+    width: 80%;
+    border-radius: 8px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: 12px;
+    border-width: 4px 4px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 8px;
+}
+
+input::placeholder, 
+textarea::placeholder {
+    color: gray;
+    font-style: italic;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    border: 1px solid rgb(114, 98, 165);
+}
+
+.form-btn {
+    margin-bottom: 20px;
+    margin-top: 12px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    border: 1px solid, rgb(114, 98, 165);
 }
 
 
@@ -335,10 +414,11 @@ h2 {
 }
 
 .contacts {
-    width: 15%;
+    width: 30%;
+    max-width: 140px;
     margin: 0 12px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .contacts img {

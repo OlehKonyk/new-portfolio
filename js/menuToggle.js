@@ -1,4 +1,3 @@
-// Відкриття/закриття меню
 document.getElementById("nav-btn").addEventListener("click", function () {
     document.getElementById("nav-menu").classList.toggle("show");
 });
@@ -32,9 +31,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
+    const menu = document.getElementById("nav-menu")
     if (window.scrollY > 50) {
         header.style.background = "rgba(15, 10, 38, 0.8)";
     } else {
         header.style.background = "rgba(15, 10, 38, 0.4)";
     }
+    menu.classList.remove("show")
 });

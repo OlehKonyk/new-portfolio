@@ -33,9 +33,9 @@ window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     const menu = document.getElementById("nav-menu")
     if (window.scrollY > 50) {
-        header.style.background = "rgba(15, 10, 38, 0.8)";
+        header.style.background = "rgba(15, 10, 38, 0.5)";
     } else {
-        header.style.background = "rgba(15, 10, 38, 0.4)";
+        header.style.background = "rgba(15, 10, 38, 0.7)";
     }
     menu.classList.remove("show")
 });

@@ -7,7 +7,8 @@ document.querySelector("form").addEventListener("submit", async function (event)
     try {
         const response = await fetch("/", {
             method: "POST",
-            body: formData,
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
         });
 
         if (response.ok) {

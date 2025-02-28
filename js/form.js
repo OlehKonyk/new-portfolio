@@ -1,30 +1,19 @@
-document.querySelector("form").addEventListener("submit", async function (event) {
+
+
+
+const handleSubmit = event => {
     event.preventDefault();
 
-    const form = event.target;
-    const formData = new FormData(form);
+    const myForm = event.target;
+    const formData = new FormData(myForm);
 
-    console.log("FormData:", formData); // Перевіряємо дані форми
-    const urlParams = new URLSearchParams(formData).toString();
-    console.log("URL Params:", urlParams); // Перевіряємо, що відправляється
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+    })
+        .then(() => console.log("Form successfully submitted"))
+        .catch(error => alert(error));
+};
 
-    try {
-        const response = await fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: urlParams,
-        });
-
-        console.log("Response Status:", response.status); // Дивимось статус відповіді
-
-        if (response.ok) {
-            alert("Message sent successfully!");
-            form.reset();
-        } else {
-            alert("Error sending message.");
-        }
-    } catch (error) {
-        console.error("Fetch error:", error); // Виводимо помилки у консоль
-        alert("Something went wrong. Please try again.");
-    }
-});
+document.querySelector("form").addEventListener("submit", handleSubmit);

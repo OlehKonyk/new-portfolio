@@ -344,11 +344,7 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-.skill-icon img:hover {
-    margin-bottom: 4px;
-    filter: drop-shadow(0 4px 10px  var(--color-text));
-    transform: scale(1.2);
-}
+
 
 /* form */
 
@@ -411,6 +407,7 @@ h2 {
     border-style: solid;
     border-color: black;
     padding: 8px;
+    resize: none;
 }
 
 input::placeholder, 
@@ -525,6 +522,15 @@ textarea:focus {
     }
 
     .nav-menu li a:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media (min-width: 1025px) {
+    
+    .skill-icon img:hover {
+        margin-bottom: 4px;
+        filter: drop-shadow(0 4px 10px  var(--color-text));
         transform: scale(1.2);
     }
 }

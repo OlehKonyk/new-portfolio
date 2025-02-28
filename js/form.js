@@ -1,25 +1,16 @@
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-  
-    if (!isValidEmail(userEmailField.value)) {
-      userEmailField.classList.add("error");
-      return;
-    }
-  
-    const formData = new FormData(form);
-  
-    launchBtn.setAttribute("disabled", true);
-  
+const handleSubmit = event => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
     fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
     })
-      .then(() => {
-        showGooseAnim();
-        setTimeout(() => {
-          location.reload();
-        }, 3000);
-      })
-      .catch((error) => console.log("Sending form failed"));
-  });
+        .then(() => console.log("Form successfully submitted"))
+        .catch(error => alert(error));
+};
+
+document.querySelector("form").addEventListener("submit", handleSubmit);

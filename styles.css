@@ -424,6 +424,12 @@ textarea:focus {
     border: 1px solid rgb(114, 98, 165);
 }
 
+input:-internal-autofill {
+    background-image: none !important;
+    background-color: transparent !important;
+    color: var(--color-text) !important;
+}
+
 .form-btn {
     margin-bottom: 20px;
     margin-top: 12px;

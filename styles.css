@@ -554,6 +554,11 @@ input:-internal-autofill {
 
 @media (min-width: 1025px) {
 
+    h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
     .project-cart {
         padding: 12px 18px;
     }
@@ -577,11 +582,17 @@ input:-internal-autofill {
         grid-template-columns: repeat(auto-fit, minmax(380px, 500px));
     }
 
+    #info {
+        padding-bottom: 40px;
+    }
+
     .info-container h4 {
+        padding: 12px;
         font-size: 26px;
     }
     
     .info-container p {
+        padding: 12px 0;
         font-size: 16px;
     }
 
@@ -593,5 +604,38 @@ input:-internal-autofill {
     .skill-icon img:hover {
         margin-bottom: 4px;
         transform: scale(1.2);
+    }
+
+    .input-container {
+        flex-direction: row;
+        height: 25%;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        margin: 20px;
+        gap: 16px;
+    }
+
+    .form-input {
+        margin: 24px 0;
+        min-height: 48px;
+        font-size: 20px;
+        padding-left: 12px;
+    }
+
+    .form textarea {
+        height: 55%;
+        font-size: 20px;
+        padding-left: 12px;
+    }
+
+    input::placeholder, 
+    textarea::placeholder {
+        font-size: 20px;
+    }
+
+    input:focus, 
+    textarea:focus {
+        border: 2px solid rgb(114, 98, 165);
     }
 }

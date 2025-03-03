@@ -117,6 +117,7 @@ h2 {
     padding: 10px 0;
     text-align: left;
     box-shadow: -2px 2px 8px var(--color-text);
+    padding-left: 8px;
 }
 
 .nav-menu.show {
@@ -127,7 +128,7 @@ h2 {
 
 .nav-menu li {
     list-style: none;
-    padding: 16px 10px;
+    padding: auto;
 }
 
 .nav-menu li a {
@@ -210,7 +211,7 @@ h2 {
     display: grid;
     columns: 1;
     gap: 24px;
-    margin: 0 32px;
+    margin: 0 14px;
     grid-template-columns: repeat(auto-fit, minmax(340px, 460px));
     justify-content: space-around;
 }
@@ -232,11 +233,6 @@ h2 {
 .project-cart:hover {
     opacity: 1;
     box-shadow: -2px 2px 15px rgba(114, 98, 165, 0.3);
-    transform: scale(1.02) translate(10px, -10px);
-}
-
-.project-cart:hover img {
-    transform: scale(1.05) translate(16px, 4px);
 }
 
 .project-cart h3 {
@@ -344,6 +340,10 @@ h2 {
     transition: transform 0.3s ease;
 }
 
+.skill-icon img:hover {
+    filter: drop-shadow(0 4px 10px  var(--color-text));
+}
+
 
 
 /* form */
@@ -431,14 +431,20 @@ input:-internal-autofill {
 }
 
 .form-btn {
+    font-size: 14px;
     margin-bottom: 20px;
     margin-top: 12px;
     padding: 8px 12px;
     border-radius: 12px;
     background-color: var(--color-bg);
     color: var(--color-text);
-    border: 1px solid, rgb(114, 98, 165);
+    border: 2px solid, var(--color-text);
     cursor: pointer;
+}
+
+.form-btn:hover {
+    transform: scale(1.05);
+    border: 2px solid, var(--color-menu-text-hover)
 }
 
 
@@ -487,6 +493,7 @@ input:-internal-autofill {
         height: 240px;
         width: 240px
     }
+
 }
 
 @media (min-width: 768px){
@@ -517,6 +524,7 @@ input:-internal-autofill {
         width: 80%;
         top:0;
         justify-content: space-around;
+        align-items: center;
     }
 
     .nav-menu li a {
@@ -530,13 +538,60 @@ input:-internal-autofill {
     .nav-menu li a:hover {
         transform: scale(1.2);
     }
+    .cart-container {
+        padding-top: 24px;
+        gap: 14px;
+    }
+
+    .project-cart:hover {
+        transform: scale(1.02) translate(10px, -10px);
+    }
+    
+    .project-cart:hover img {
+        transform: scale(1.05) translate(16px, 4px);
+    }
 }
 
 @media (min-width: 1025px) {
+
+    .project-cart {
+        padding: 12px 18px;
+    }
+
+    .project-cart h3 {
+        margin: 8px 0;
+        font-size: 26px;
+    }
     
+    .project-cart p {
+        font-size: 12px;
+    }
+    
+    .project-cart img {
+        height: 70%;
+        margin: 8px;
+    }
+    .cart-container {
+        padding-top: 40px;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 500px));
+    }
+
+    .info-container h4 {
+        font-size: 26px;
+    }
+    
+    .info-container p {
+        font-size: 16px;
+    }
+
+    .skills-container h3 {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
     .skill-icon img:hover {
         margin-bottom: 4px;
-        filter: drop-shadow(0 4px 10px  var(--color-text));
         transform: scale(1.2);
     }
 }

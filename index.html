@@ -17,64 +17,63 @@
             <div class="right-side">
                 <div class="switchers">
                     <button class="switcher" id="theme-switch">☀️</button>
-                    <button class="switcher" id="leng-switch">UK</button>
+                    <button class="switcher" id="language-switch">UK</button>
                 </div>
                 <button id="nav-btn">☰</button>
                 <ul id="nav-menu" class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#works">Projects</a></li>
-                    <li><a href="#info">About Me</a></li>
-                    <li><a href="#form-section">Contact</a></li>
+                    <li><a id="manu-link-home" href="#home">Home</a></li>
+                    <li><a id="manu-link-projects" href="#works">Projects</a></li>
+                    <li><a id="manu-link-info" href="#info">About Me</a></li>
+                    <li><a id="manu-link-contact" href="#form-section">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <a href=""></a>
         <section id="home" class="home-page-section">
             <div class="home-page-content">
                 <div class="home-page-text">
-                    <h1>Oleh Konyk</h1>
-                    <h3>Frontend developer</h3>
+                    <h1 id="my-name">Oleh Konyk</h1>
+                    <h3 id="my-prof">Frontend developer</h3>
                 </div>
                 <img src="img/avatar.png" class="avatar"  alt="Avatar">
             </div>
         </section>
         <section id="works">
-            <h2>My projects</h2>
+            <h2 id="projects-tittle">My projects</h2>
             <div class="cart-container">
                 <article class="project-cart">
                     <a href="https://tiny-pudding-5e6dc5.netlify.app/" target="_blank">
-                        <h3>Banderogus</h3>
-                        <p>A small website taken from the GO IT marathon, to which I made stylistic changes and adjusted the form's functionality</p>
+                        <h3 id="gus-tittle">Banderogus</h3>
+                        <p id="gus-description">A small website taken from the GO IT marathon, to which I made stylistic changes and adjusted the form's functionality</p>
                         <img src="img/Gus.png"   alt="">
                     </a>
                 </article>
                 <article class="project-cart">
                     <a href="https://tiny-pudding-5e6dc5.netlify.app/" target="_blank">
-                        <h3>Banderogus</h3>
-                        <p>A small website taken from the GO IT marathon, to which I made stylistic changes and adjusted the form's functionality</p> 
+                        <h3 id="gus2-tittle">Banderogus</h3>
+                        <p id="gus2-description">A small website taken from the GO IT marathon, to which I made stylistic changes and adjusted the form's functionality</p> 
                         <img src="img/Gus.png"   alt="">
                     </a>
                 </article>
             </div>
         </section>
         <section id="info">
-            <h2>Info</h2>
+            <h2 id="info-tittle">Info</h2>
             <div class="about-me-container">
                 <div class="info-container">
                     <img src="img/avatar2.png" class="avatar2"  alt="Avatar">
                     <div class="info-content">
-                        <h4>Who am I?</h4>
-                        <p>I'm quietly confident, naturally curious, and perpetually working young developer. 
+                        <h4 id="about-me-tittle">Who am I?</h4>
+                        <p id="about-me-descriptoin">I'm quietly confident, naturally curious, and perpetually working young developer. 
                             Wish to begin my journey in a new, but at the same time interesting profession.</p>
                         <a href="KonykOleh.pdf" download="KonykOleh.pdf" target="_blank">
-                            <button>Download CV</button>
+                            <button id="cv-btn">Download CV</button>
                         </a>
                     </div>
                 </div>
                 <div class="skills-container">
-                    <h3>Skills</h3>
+                    <h3 id="skills-tittle">Skills</h3>
                     <div>
                         <ul class="skills-list">
                             <li class="skill-icon">
@@ -123,14 +122,14 @@
             </div>
         </section>
         <section id="form-section">
-            <h2>Contact me</h2>
+            <h2 id="form-tittle">Contact me</h2>
             <form class="form" name="PortfolioForm" action="" method="POST" data-netlify="true">
                 <div class="input-container">
                     <input class="form-input" placeholder=" Your name" name="Name" type="text" required>
                     <input class="form-input" placeholder=" Email" name="Email" type="email" required>
                 </div>
                 <textarea name="Message" placeholder=" Message" id=""></textarea>
-                <button class="form-btn" type="submit">Send Message</button>
+                <button class="form-btn" type="submit" id="form-btn">Send Message</button>
             </form>
         </section>
     </main>
@@ -146,5 +145,6 @@
     <script src="js/menuToggle.js"></script>
     <script src="js/themes.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/translation.js"></script>
 </body>
 </html>

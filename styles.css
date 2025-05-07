@@ -561,6 +561,7 @@ input:-internal-autofill {
         position: absolute;
         left: -20px;
         width: 300px;
+        bottom: 4px;
     }
 
     .cart-container {

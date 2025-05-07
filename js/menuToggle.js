@@ -32,10 +32,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     const menu = document.getElementById("nav-menu")
-    if (window.scrollY > 50) {
-        header.style.background = "rgba(30, 19, 76, 0.5)";
+    if (window.scrollY > 60) {
+        header.style.background = "var(--color-bg)";
+        header.style.opacity = "0.6";
     } else {
-        header.style.background = "rgba(29, 18, 75, 0.7)";
+        header.style.background = "var(--color-bg)";
+        header.style.opacity = "1.0";
     }
     menu.classList.remove("show")
 });

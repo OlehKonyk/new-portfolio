@@ -10,8 +10,8 @@
     --color-text: rgb(15, 28, 50);
     --color-bg: rgb(179, 242, 246);
     --color-bg-cart: rgb(102, 185, 183);
-    --color-menu-text: rgb(208, 224, 240);
-    --color-menu-text-hover: rgb(168, 226, 241);
+    --color-menu-text: rgb(23, 50, 74);
+    --color-menu-text-hover: rgb(25, 43, 71);
 }
 
 * {
@@ -51,12 +51,12 @@ h2 {
 /* Header */
 
 .header {
-    background: rgba(15, 10, 38, 0.7);
+    background: var(--color-bg);
     position: fixed;
     top: 0;
     height: 60px;
     width: 100%;
-    border-bottom: 2px solid rgb(174, 122, 192);
+    border-bottom: 2px solid var(--color-bg-cart);
     z-index: 100;
 }
 

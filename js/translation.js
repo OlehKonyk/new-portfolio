@@ -45,13 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
             en: "A small website taken from the GO IT marathon, to which I made stylistic changes and adjusted the form's functionality",
             uk: "Невеликий вебсайт, створений на марафоні GO IT, до якого я вніс стилістичні зміни та налаштував функціональність форми"
         },
-        "gus2-description": {
-            en: "A small website taken from the GO IT marathon, to which I made stylistic changes and adjusted the form's functionality",
-            uk: "Невеликий вебсайт, створений на марафоні GO IT, до якого я вніс стилістичні зміни та налаштував функціональність форми"
+        "burger-description": {
+            en: "Small animated food delivery website",
+            uk: "Невеликий анімований сайт доставки їжі"
         },
-        "gus2-tittle": {
-            en: "Banderogus",
-            uk: "Бандерогусь"
+        "burger-tittle": {
+            en: "BestBurger",
+            uk: "BestBurger"
         },
         "info-tittle": {
             en: "Info",
